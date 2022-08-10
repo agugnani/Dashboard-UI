@@ -78,6 +78,10 @@ li {
   align-items: flex-end;
 }
 
+.gap-24 {
+  gap: 24px;
+}
+
 .gap-20 {
   gap: 20px;
 }
@@ -102,7 +106,7 @@ li {
 /* Sections */
 main {
   padding: 30px 40px 50px;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -113,7 +117,7 @@ main {
 
 .cards {
   background-color: rgba(255, 255, 255, .09);
-  min-width: 216px;
+  min-width: 230px;
   min-height: 60px;
   border-radius: 6px;
   padding: 12px 22px;
@@ -137,6 +141,10 @@ main {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   margin: 12px 0 0;
+}
+
+.welcome .status .right {
+  justify-self: center;
 }
 
 .status .subtitle {
@@ -188,8 +196,9 @@ main {
 .circle {
   width: 46px;
   height: 46px;
-  line-height: 1;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .circle.one {
@@ -218,6 +227,7 @@ main {
 
 .circle p {
   font-size: 11px;
+  line-height: 1;
 }
 
 .project-status .cards .data {
